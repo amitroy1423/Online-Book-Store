@@ -1,0 +1,316 @@
+/* Orders Pages Styles */
+
+.orders-page {
+  padding-bottom: var(--spacing-2xl);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.order-history-card {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: box-shadow var(--transition-fast);
+}
+
+.order-history-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.order-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.order-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.order-id-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.order-date-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.order-items-preview-strip {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.order-item-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.6rem;
+  max-width: 320px;
+}
+
+.order-item-thumb {
+  width: 32px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.order-item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+.item-qty-price {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.order-history-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.order-total-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.order-payment-type {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.order-total-amount {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.order-total-amount strong {
+  color: var(--color-primary);
+}
+
+/* Order Detail Page */
+.order-detail-page {
+  padding-bottom: var(--spacing-2xl);
+}
+
+.order-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.order-detail-header-card {
+  padding: var(--spacing-xl);
+}
+
+.detail-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.order-badge-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.order-detail-id {
+  font-size: var(--font-size-2xl);
+  margin: 0.2rem 0;
+}
+
+.order-detail-date {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+}
+
+.detail-status-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--color-background);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.status-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.order-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.order-items-card {
+  padding: var(--spacing-xl);
+}
+
+.order-items-table-wrapper {
+  margin-top: var(--spacing-md);
+}
+
+.table-book-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.table-book-thumb {
+  width: 44px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  background: #f1f5f9;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-book-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.table-book-title {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.table-book-author {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.order-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.card-heading {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.order-address-card,
+.order-payment-card,
+.order-total-card {
+  padding: var(--spacing-lg);
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.recipient-name {
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.payment-type {
+  font-size: var(--font-size-sm);
+  margin-bottom: 0.25rem;
+}
+
+.payment-instruction {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cost-row-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.total-due-amount {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+}
+
+@media (max-width: 860px) {
+  .order-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
